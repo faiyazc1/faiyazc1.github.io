@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faiyaz Chowdhury — Portfolio</title>
+  <meta name="description" content="Portfolio of Faiyaz Chowdhury — frontend, mobile, backend, and AI projects with a focus on clean UX and practical impact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:#0f1a38;
+      --ink:#e9eefc;
+      --muted:#9fb0d9;
+      --accent:#7fd1ff;
+      --accent-2:#6cf4c5;
+      --border: rgba(255,255,255,0.08);
+      --card:#101933;
+      --chip:#15224a;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}
+    .name{font-size:28px;font-weight:800;letter-spacing:.3px}
+    nav a{margin-left:18px;color:var(--muted)}
+    nav a:hover{color:var(--ink)}
+    .hero{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:center;margin:12px 0 28px}
+    .hero-card{background:linear-gradient(180deg, var(--panel), var(--card));border:1px solid var(--border);border-radius:18px;padding:28px;box-shadow:0 15px 40px rgba(0,0,0,.25)}
+    .title{font-size:44px;line-height:1.05;margin:0 0 12px}
+    .subtitle{color:var(--muted);font-size:16px;margin:0 0 18px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 2px}
+    .chip{background:var(--chip);border:1px solid var(--border);color:var(--ink);padding:7px 12px;border-radius:999px;font-size:12px}
+    .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:#111c3a;color:var(--ink);font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#051022;border:none}
+    .panel{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:22px}
+    .grid{display:grid;gap:16px}
+    .grid.projects{grid-template-columns:repeat(3,1fr)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px}
+    .card h3{margin:4px 0 2px;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+    .tag{background:var(--chip);border:1px solid var(--border);padding:5px 10px;border-radius:999px;font-size:11px;color:var(--muted)}
+    .row{display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap}
+    .section-title{font-weight:800;font-size:20px;margin:0 0 12px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    footer{color:var(--muted);text-align:center;margin:32px 0 10px}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:12px;color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid var(--border);font-size:12px;color:var(--muted)}
+    .list{margin:0;padding-left:18px;color:var(--muted)}
+    @media (max-width: 880px){
+      .hero{grid-template-columns:1fr}
+      .grid.projects{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 620px){
+      .grid.projects{grid-template-columns:1fr}
+      .title{font-size:36px}
+      .name{font-size:22px}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="name">Faiyaz Chowdhury</div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#sports">Sports Tech</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h1 class="title">Building clean, fast, human-friendly apps.</h1>
+        <p class="subtitle">Senior CS @ UCSC · Frontend & Mobile · Backend & AI curious · Design systems and clear UX.<br/>
+        Open to roles in frontend, mobile, platform + <b>sports tech</b>.</p>
+        <div class="chips">
+          <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">TypeScript</span>
+          <span class="chip">React Native</span><span class="chip">Python</span><span class="chip">AWS</span>
+          <span class="chip">SQL</span><span class="chip">Figma</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/faiyazc1" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/faiyaz-chowdhury1" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="Faiyaz_Portfolio_Deck.pdf" target="_blank" rel="noopener">Portfolio PDF</a>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="section-title">Snapshot</div>
+        <div class="row">
+          <span class="pill">UCSC · BS Computer Science (2025)</span>
+          <span class="pill">President · Bangladeshi Student Association</span>
+          <span class="pill">Headstarter · SWE Fellow</span>
+        </div>
+        <div style="height:10px"></div>
+        <div class="row">
+          <div>
+            <div class="mono">Toolbox</div>
+            <div class="tags">
+              <span class="tag">HTML/CSS</span><span class="tag">Tailwind</span><span class="tag">Node</span>
+              <span class="tag">Firebase</span><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span>
+              <span class="tag">ServiceNow</span><span class="tag">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="panel">
+      <div class="section-title">Highlighted Projects</div>
+      <div class="grid projects">
+        <article class="card">
+          <h3>Landing Page</h3>
+          <p>Modern, responsive landing page showcasing layout, typography, and component structure.</p>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+          </div>
+          <a class="mono" href="https://github.com/faiyazc1/landing-page" target="_blank">github.com/faiyazc1/landing-page</a>
+        </article>
+        <article class="card">
+          <h3>Pantry</h3>
+          <p>Inventory tracker for pantry items. Emphasis on simple flows, data model, and snappy UX.</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span><span class="tag">Local storage</span>
+          </div>
+          <a class="mono" href="https://github.com/faiyazc1/pantry" target="_blank">github.com/faiyazc1/pantry</a>
+        </article>
+        <article class="card">
+          <h3>The Good Muslim (Chatbot)</h3>
+          <p>Progressive, respectful assistant. Focus on safety, tone, and information architecture.</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span><span class="tag">AI APIs</span><span class="tag">Node</span>
+          </div>
+          <a class="mono" href="https://github.com/faiyazc1/the-good-muslim" target="_blank">github.com/faiyazc1/the-good-muslim</a>
+        </article>
+        <article class="card">
+          <h3>Flashcard SaaS</h3>
+          <p>Lightweight study app. Clean CRUD, spaced repetition logic, and crisp UI.</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+          </div>
+          <a class="mono" href="https://github.com/faiyazc1/flashcard-saas" target="_blank">github.com/faiyazc1/flashcard-saas</a>
+        </article>
+        <article class="card">
+          <h3>Family Website</h3>
+          <p>Personal website that emphasizes warmth and clarity with simple components.</p>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+          </div>
+          <a class="mono" href="https://github.com/faiyazc1/familywebsite" target="_blank">github.com/faiyazc1/familywebsite</a>
+        </article>
+      </div>
+    </section>
+
+    <div style="height:16px"></div>
+
+    <section id="experience" class="split">
+      <div class="panel">
+        <div class="section-title">Experience</div>
+        <ul class="list">
+          <li><b>Assistant ITS Software License Coordinator · UCSC</b> — audits, compliance, stakeholder support, process docs.</li>
+          <li><b>Software Engineering Fellow · Headstarter</b> — full‑stack apps with React/Next.js + Firebase, AI features.</li>
+          <li><b>Apprentice Web Developer · GDSC UCSC</b> — Flutter/React prototypes, UI systems, and usability focus.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="section-title">Skills</div>
+        <div class="tags">
+          <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TypeScript</span>
+          <span class="tag">React Native</span><span class="tag">Flutter</span><span class="tag">Python</span>
+          <span class="tag">Node</span><span class="tag">AWS</span><span class="tag">PostgreSQL</span>
+          <span class="tag">MongoDB</span><span class="tag">Firebase</span><span class="tag">Figma</span>
+        </div>
+      </div>
+    </section>
+
+    <div style="height:16px"></div>
+
+    <section id="sports" class="panel">
+      <div class="section-title">Sports Tech Focus</div>
+      <p class="subtitle">I’m interested in developer roles across sports media/analytics/products. Here’s how my current toolkit maps:</p>
+      <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:14px">
+        <div class="card">
+          <h3>Real‑time UX</h3>
+          <p>Responsive web/mobile UIs for live scores, highlights, or fan engagement.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">RN</span><span class="tag">WebSockets</span></div>
+        </div>
+        <div class="card">
+          <h3>Data & APIs</h3>
+          <p>Consuming sports APIs and visualizing stats with clean components and state mgmt.</p>
+          <div class="tags"><span class="tag">REST</span><span class="tag">GraphQL</span><span class="tag">Charts</span></div>
+        </div>
+        <div class="card">
+          <h3>AI Features</h3>
+          <p>Summaries, recommendations, and content tooling around games and players.</p>
+          <div class="tags"><span class="tag">NLP</span><span class="tag">RAG</span><span class="tag">GenAI</span></div>
+        </div>
+      </div>
+      <div class="chips" style="margin-top:10px">
+        <span class="chip">Fan UX</span><span class="chip">Notifications</span><span class="chip">A/B testing</span><span class="chip">Accessibility</span>
+      </div>
+    </section>
+
+    <div style="height:16px"></div>
+
+    <section id="contact" class="panel">
+      <div class="section-title">Contact</div>
+      <div class="row">
+        <a class="btn" href="mailto:faiyazwchowdhury@gmail.com">Email</a>
+        <a class="btn" href="https://github.com/faiyazc1" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/faiyaz-chowdhury1" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="#projects">View Projects</a>
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> Faiyaz Chowdhury · Built with care</footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
